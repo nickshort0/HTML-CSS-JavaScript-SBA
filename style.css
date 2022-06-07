@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background-color: green;
+    background-image: linear-gradient(to top, green 0%, orange 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: yellow;
+    background: -webkit-linear-gradient(to right, orange, green, turquoise);
+    background: linear-gradient(to right, orange, green, turquoise);
+    color: white;
+    transition: all 0.9s ease;
+}
+
+.navbar__links:hover{
+    color: magenta;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    color:black;
+    background: yellow;
+    background: -webkit-linear-gradient(to right, turquoise, green, orange);
+    background: linear-gradient(to right, turquoise, green, orange);
+    transition: all 0.9s ease;
+}
+
+
+    .shrek{
+        background:black;
+        background: linear-gradient(to right, green, black);
+        padding: 200px 0;
+    }
+
+    .shrek__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 90%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .shrek__heading{
+        font-size: 100px;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    .shrek__heading span{
+        background: yellow;
+        background: -webkit-linear-gradient(to right, red, indigo, turquoise);
+        background: linear-gradient(to right, red, indigo, turquoise);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    .shrek__description{
+        font-size: 60px;
+        background: gold;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    .highlight{
+        border-bottom: 4px solid silver;
+    }
+
+
+    @media screen and (max-width: 768px){
+        .shrek__heading{
+            font-size: 60px;
+        }
+
+        .shrek__description{
+            font-size: 40px;
+        }
+    }
+
+    /*About Shrektion*/
+    .main{
+        background-color: black;
+        padding: 10rem 0;
+    }
+
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        height: 90%;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0 50px;
+    }
+
+    .main__content{
+        color:aliceblue;
+        width: 100%;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+        background-color: green;
+        background-image: linear-gradient(to top, green 0%, orange 100%);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    .main__content h2 {
+        font-size: 4rem;
+        background: antiquewhite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size:2rem;
+        font-weight: 700;
+        color: purple;
+    }
+
+    .main__btn {
+        font-size: 1.8rem;
+        background: green;
+        background: -webkit-linear-gradient(to right, green, turquoise);
+        background: linear-gradient(to right, green, turquoise);
+        padding:20px 60px;
+        border: none;
+        border-radius: 4px;
+        color: wheat;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.35s;
+        outline: none;
+        transition: all 0.9s ease;
+    }
+
+    
+
+    .main__btn a {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-decoration: none;
+        transition: all 0.9s ease;
+    }
+
+    .main__btn:hover{
+        background: -webkit-linear-gradient(to right, turquoise, green);
+        background: linear-gradient(to right, turquoise, green);
+        transition: all 0.9s ease;
+    }
+
+    .main__btn a:hover {
+        background: yellow;
+        background: -webkit-linear-gradient(to right, red, indigo, turquoise);
+        background: linear-gradient(to right, red, indigo, turquoise);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        transition: all 0.9s ease;
+    }
+
+
+    img{
+        width: 50%;
+        height: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    #user-form{
+        font-size: 1.5rem;
+        color:white;
+        border-color: black;
+        border: 3px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+    
+    input, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: black;
+      }
+
+      #signup-label{
+          color: white;
+          border-color: black;
+          padding-bottom: 25px;
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border-color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        background-image: linear-gradient(to top, green 0%, orange 100%);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 0.2px white;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+      #swamp{
+        width: auto;
+      }
+
+      #swamp-form, #msg-to-shrek, #saywhat{
+        font-size: 1.5rem;
+        color:white;
+        border-color: black;
+        padding: 12px 20px;
+        margin: 8px 0;
+        text-align: left;
+      }
+
+      input[type="checkbox"]{
+          width: auto;
+      }
+
+      .fact__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 90%;
+        text-align: left;
+        padding: 30px;
+        font-size: 2.5rem;
+        color:purple;
+        -webkit-text-stroke: 0.5px white;
+      }
+
+      .facts{
+        background: linear-gradient(to right, black, turquoise);
+        padding: 200px 0;
+      }
+
+      .signup{
+        background:black;
+        background: linear-gradient(to right, green, black);
+        padding: 200px 0;
+        background-size: 100%;
+      }
+

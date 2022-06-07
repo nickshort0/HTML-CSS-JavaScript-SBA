@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Get Shrek'd</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#swamp" class="navbar__links" id="services-page">Swamp</a>
+                </li>
+                <li class="navbar__btn">
+                    <<a href="signup.html" class="button" id="signup">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Main Shrektion-->
+    <div class="signup" id="home">
+        <div class="shrek__container">
+            <h1 id="signup-label">Sign up</h1>
+            <form onsubmit="return false" id="user-form">
+                <label for="uname">Username:</label><br>
+                <input type="text" id="uname" name="uname"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd"><br>
+                <label for="fav-movie">Favorite Shrek Motion Picture:</label><br>
+                <select name = "fav-movie" id="movie">
+                    <option value = "Shrek" selected>Shrek (2001)</option>
+                    <option value = "Shrek 2">Shrek 2 (2004)</option>
+                    <option value = "Shrek The Third">Shrek The Third (2007)</option>
+                    <option value = "Shrek Forever After">Shrek Forever After (2010)</option>
+                    <option value = "Untitled fifth Shrek film">Untitled fifth Shrek film (TBA)</option>
+                 </select>
+                <input type="submit" value="Submit" id="signup-submit" class="main__btn">
+            </form> 
+            <table id = "user-table" style = "visibility: hidden">
+                <tr>
+                  <th>Username</th>
+                  <th>Password</th>
+                  <th>Favorite Shrek Movie</th>
+                </tr>
+                <tr>
+                  <td id="tuname"></td>
+                  <td id="tpwd"></td>
+                  <td id="tmovie"></td>
+                </tr>    
+              </table>   
+              <!--please ignore-->
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+   <script>
+       document.getElementById("signup-submit").addEventListener('click', displayUserInfo);
+   </script>
+</body>
+</html>

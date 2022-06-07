@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Get Shrek'd</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#swamp" class="navbar__links" id="swamp-page">Swamp</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="signup.html" class="button" id="signup">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Main Shrektion-->
+    <div class="shrek" id="home">
+        <div class="shrek__container">
+            <img id="shrek-pic">
+            <h1 class="shrek__heading" id = "shrekker">Who is your favorite Shrek character?<br></h1>
+            <form onsubmit="return false" id="shrek-form">
+                <input type="text" id="name" name="name"><br>
+                <input type="submit" value="Submit" onclick="favoriteChar()" class="main__btn">
+            </form> 
+            <form style = "visibility: hidden" id = "try-again" action="shrek.html">
+                <input type="submit" value="Try Again" class="main__btn">
+            </form>
+            <br><br><br><br><br><br>  
+        </div>
+    </div>
+    
+</body>
+</html>
